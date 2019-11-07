@@ -1,0 +1,229 @@
+/* */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+/* Dit is de navigatie van de site */
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 500px;
+    text-decoration: none;
+    width: 100vw;
+
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: orange;
+    transition: all .3s ease .1s;
+}
+
+/* Dit is het logo van de site */
+
+a .hhblogo {
+    margin: auto;
+    max-height: 400px;
+    padding-top: 1em;
+    vertical-align: middle;
+    width: 10em;
+}
+
+/* Dit is de header van de site */
+
+
+header {
+    align-items: center;
+    background-color: rgb(33, 36, 43);
+    border-bottom: solid 1px red;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dit is de footer van de site */
+
+footer > h1 > a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+footer h1 a:visited {
+    color: white;
+}
+
+footer h1 a:hover {
+    color: orange;
+    transition: all .3s ease .1s;
+}
+
+
+footer {
+    position: absolute;
+    background-color: rgb(33, 36, 43);
+    border-top: solid red;
+    color: white;
+    font-size: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Dit is de inhoud van de site homepagina */
+
+
+/* https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/ */
+
+section {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(2, );
+    justify-content: center;
+    padding: 1em;
+}
+
+section > article > h2,h3,h4 {
+    margin: 1em;
+
+}
+
+section > article > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h4 a {
+    font-size: 10px;
+    padding: auto;
+}
+
+/* Dit is het underconstruction logo van de site */
+
+.underconstruction {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 400px;
+    padding: 10px;
+}
+
+/* Dit is de detail pagina van de site */
+
+#receptdetail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 4em;
+}
+
+#ingredienten > article {
+    display: none
+}
+
+
+article.ingredienten > h1,h2,h3,h4 {
+    text-align: center;
+}
+
+/* dit is het contact formulier van de website */
+
+/*https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: rgb(33, 36, 43);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+
+.container {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(33, 36, 43);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+
+button:hover {
+    background-color: orange;
+}
+
+/* dit is de melding van het formulier*/
+
+#element {
+    border: 2px solid gray;
+    margin: 1rem;
+    opacity: 0;
+    padding: 2rem;
+    transition: 0.3s;
+
+}
+
+#element.yay {
+    opacity: 1;
+}
+
+
+
+
